@@ -1,8 +1,18 @@
+x = []
+y = []
 
-list = list(range(1, 100))
-print("List: ", list)
+i=1
+while i <= 100:
+    x.append(i)
+    i+=1
 
-for i in range(0,100):
-  while True:
-    if (i% 7 == 0) and (i % 5!= 0):
-        print("List x: ", i)
+print("List 1: ", x)
+
+i=0
+while i < len(x):
+    if x[i]%7 == 0 and x[i]%5!=0:
+     y.append(x[i])
+
+    i+=1
+
+print("Filtered list: ", y)
