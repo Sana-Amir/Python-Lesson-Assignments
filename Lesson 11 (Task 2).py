@@ -3,11 +3,11 @@ class Mathematician:
         return [n*n for n in numbers]
 
     def remove_positives(self, numbers):
-        remove_positives = [number for number in numbers if number<0]
+        remove_positives = [x for x in numbers if x<0]
         return remove_positives
 
     def filter_leaps(self, numbers):
-        filter_leaps = [number for number in numbers if number %4==0]
+        filter_leaps = [x for x in numbers if x %4==0]
         return filter_leaps
 
 m = Mathematician()
