@@ -17,7 +17,9 @@ class ProductStore:
         })
 
     def set_discount(self, identifier, percent, identifier_type='name'):
+        #self.identifier = identifier
         pass
+
 
     def sell_product(self, product_name, amount):
         for p in self.products:
